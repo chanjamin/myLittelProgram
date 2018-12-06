@@ -1,0 +1,4 @@
+java.lang.RuntimeException: Bean的后缀和Bean的类型设置的数量不一致！
+	at build.BeanBuilder.build(BeanBuilder.java:281)
+	at ui.TableToBeanUI$20.run(TableToBeanUI.java:728)
+	at java.lang.Thread.run(Unknown Source)

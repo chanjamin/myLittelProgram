@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 用户添加的数据源配置文件 -->
+<dbConfig>
+    <mysql-config>
+        <mysql name="数据源1" index="1">
+            <ip>127.0.0.1</ip>
+            <dbName>taotao</dbName>
+            <port>3306</port>
+            <username>root</username>
+            <password>123456</password>
+            <remark>taotao</remark>
+        </mysql>
+    </mysql-config>
+</dbConfig>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.taotao.manager.mapper.OrderMapper" >
+  <resultMap id="BaseResultMap" type="com.taotao.manager.model.Order" >
+    <id column="order_id" property="order_id" jdbcType="VARCHAR" />
+    <result column="payment" property="payment" jdbcType="VARCHAR" />
+    <result column="payment_type" property="payment_type" jdbcType="INTEGER" />
+    <result column="post_fee" property="post_fee" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="create_time" property="create_time" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="update_time" jdbcType="TIMESTAMP" />
+    <result column="payment_time" property="payment_time" jdbcType="TIMESTAMP" />
+    <result column="consign_time" property="consign_time" jdbcType="TIMESTAMP" />
+    <result column="end_time" property="end_time" jdbcType="TIMESTAMP" />
+    <result column="close_time" property="close_time" jdbcType="TIMESTAMP" />
+    <result column="shipping_name" property="shipping_name" jdbcType="VARCHAR" />
+    <result column="shipping_code" property="shipping_code" jdbcType="VARCHAR" />
+    <result column="user_id" property="user_id" jdbcType="BIGINT" />
+    <result column="buyer_message" property="buyer_message" jdbcType="VARCHAR" />
+    <result column="buyer_nick" property="buyer_nick" jdbcType="VARCHAR" />
+    <result column="buyer_rate" property="buyer_rate" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    order_id, payment, payment_type, post_fee, status, create_time, update_time, payment_time, 
+    consign_time, end_time, close_time, shipping_name, shipping_code, user_id, buyer_message, 
+    buyer_nick, buyer_rate
+  </sql>
+ 
+</mapper>

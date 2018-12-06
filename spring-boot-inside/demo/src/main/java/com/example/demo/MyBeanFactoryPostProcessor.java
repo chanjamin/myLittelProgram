@@ -9,7 +9,6 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 /***
- * 在BeanPostProcessor之前
  */
 @Component
 public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {

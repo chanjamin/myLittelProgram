@@ -13,6 +13,9 @@ import org.springframework.context.annotation.Primary;
 @SpringBootApplication
 @EnableCaching
 public class DemoApplication {
+    public DemoApplication() {
+        System.out.println("--------------DemoApplication----------------Constructed----------------");
+    }
 
     public static void main(String[] args) {
   ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);

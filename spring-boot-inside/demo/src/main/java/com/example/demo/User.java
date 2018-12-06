@@ -7,9 +7,12 @@ public class User implements BeanFactoryAware, BeanNameAware, InitializingBean, 
     private String name;
     private String  sex;
 
+    public User() {
+        System.out.println("--------------User----------------Constructed----------------");
+    }
 
     public void init(){
-        System.out.println("init------------------------------------------------------");
+        System.out.println("--------------User-----------------init--------------------------");
     }
 
     public void setSex(String sex) {
@@ -38,6 +41,6 @@ public class User implements BeanFactoryAware, BeanNameAware, InitializingBean, 
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("beans afterPropertiesSet");
+        System.out.println("---------------------------User--------------afterPropertiesSet-----------------------");
     }
 }

@@ -11,6 +11,7 @@
 
     <modules>
         <module>spring-beans-life-cycle</module>
+        <module>enable-principle</module>
 
     </modules>
 </project>

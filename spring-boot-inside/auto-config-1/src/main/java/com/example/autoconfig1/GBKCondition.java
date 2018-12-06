@@ -9,5 +9,6 @@ public class GBKCondition implements Condition {
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         String property = context.getEnvironment().getProperty("file.encoding");
         return "gbk".equalsIgnoreCase(property);
+
     }
 }

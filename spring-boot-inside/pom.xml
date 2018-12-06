@@ -12,6 +12,8 @@
     <modules>
         <module>spring-beans-life-cycle</module>
         <module>enable-principle</module>
-
+        <module>enableautoconfig-inspect</module>
+        <module>auto-config-1</module>
+        <module>bean-core</module>
     </modules>
 </project>

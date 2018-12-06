@@ -17,14 +17,14 @@ public class AutoConfig1Application {
         System.out.println(bean);
     }
 
-    @Bean
-    @Conditional(UTF8Condition.class)
-    UTF8Converter utf8Converter(){
-        return new UTF8Converter();
-    }
-    @Bean
-    @Conditional(GBKCondition.class)
-    GBKConverter gbkConverter(){
-        return new GBKConverter();
-    }
+//    @Bean
+//    @Conditional(UTF8Condition.class)
+//    UTF8Converter utf8Converter(){
+//        return new UTF8Converter();
+//    }
+//    @Bean
+//    @Conditional(GBKCondition.class)
+//    GBKConverter gbkConverter(){
+//        return new GBKConverter();
+//    }
 }

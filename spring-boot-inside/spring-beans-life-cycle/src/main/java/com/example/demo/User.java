@@ -2,9 +2,14 @@ package com.example.demo;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class User implements BeanFactoryAware, BeanNameAware, InitializingBean, DisposableBean {
+    @Value("123")
     private String name;
+    @Value("456")
     private String  sex;
 
     public User() {
@@ -16,11 +21,12 @@ public class User implements BeanFactoryAware, BeanNameAware, InitializingBean, 
     }
 
     public void setSex(String sex) {
+        System.out.println("setSex");
         this.sex = sex;
     }
 
     public void setName(String name) {
-
+        System.out.println("setName");
         this.name = name;
     }
 

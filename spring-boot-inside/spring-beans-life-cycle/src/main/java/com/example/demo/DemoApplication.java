@@ -38,6 +38,7 @@ public class DemoApplication {
     @Bean(initMethod = "init")
     @Primary
     public User createU(){
-        return new User();
+        User user = new User();
+        return user;
     }
 }

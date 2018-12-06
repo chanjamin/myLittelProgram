@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Import(MySelector.class)
+@Import(MyImportBeanDefinitionRegistrar.class)
 public @interface EnableLog {
     String valueToLog();
 }

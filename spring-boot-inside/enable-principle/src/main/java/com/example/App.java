@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Import;
 public class App {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(App.class, args);
-        Book bean = context.getBean(Book.class);
+//        Book bean = context.getBean(Book.class);
+        User bean = context.getBean(User.class);
         System.out.println(bean);
     }
 }

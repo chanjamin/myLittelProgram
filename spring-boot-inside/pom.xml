@@ -16,5 +16,6 @@
         <module>auto-config-1</module>
         <module>bean-core</module>
         <module>application-event</module>
+        <module>extend-springboot</module>
     </modules>
 </project>

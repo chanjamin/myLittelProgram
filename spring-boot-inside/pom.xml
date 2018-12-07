@@ -15,5 +15,6 @@
         <module>enableautoconfig-inspect</module>
         <module>auto-config-1</module>
         <module>bean-core</module>
+        <module>application-event</module>
     </modules>
 </project>

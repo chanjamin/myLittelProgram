@@ -4,6 +4,7 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -13,7 +14,7 @@ import java.util.Arrays;
 public class LogAdvice {
     @Before("execution(void com.example.aop.JoinPoint.pointCut(*))")
     public void logBefore(){
-        System.out.println("--------------------------------logBefore");
+        System.out.println("--------------------------------logBefore======="+AopContext.currentProxy().getClass());
     }
     @After("execution(void com.example.aop.JoinPoint.pointCut(*))")
     public void logAfter(JoinPoint joinPoint){

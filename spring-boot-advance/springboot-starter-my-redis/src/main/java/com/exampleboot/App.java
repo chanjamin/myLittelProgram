@@ -7,7 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import redis.clients.jedis.Jedis;
 
 @SpringBootApplication
-@EnableRedis
+//@EnableRedis
 public class App {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(App.class);

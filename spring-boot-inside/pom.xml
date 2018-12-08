@@ -17,5 +17,6 @@
         <module>bean-core</module>
         <module>application-event</module>
         <module>extend-springboot</module>
+        <module>springboot-web</module>
     </modules>
 </project>

@@ -18,5 +18,6 @@
         <module>application-event</module>
         <module>extend-springboot</module>
         <module>springboot-web</module>
+        <module>springboot-starter-my-redis</module>
     </modules>
 </project>

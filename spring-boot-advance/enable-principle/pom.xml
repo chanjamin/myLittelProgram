@@ -9,7 +9,7 @@
 
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>spring-boot-inside</artifactId>
+        <artifactId>spring-boot-advance</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 

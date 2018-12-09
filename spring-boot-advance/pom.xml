@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>spring-boot-inside</artifactId>
+    <artifactId>spring-boot-advance</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -19,5 +19,7 @@
         <module>extend-springboot</module>
         <module>springboot-web</module>
         <module>springboot-starter-my-redis</module>
+        <module>spring-aop</module>
+        <module>springboot-test</module>
     </modules>
 </project>

@@ -10,16 +10,16 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-beans-life-cycle</module>
-        <module>enable-principle</module>
-        <module>enableautoconfig-inspect</module>
+        <module>application-event</module>
         <module>auto-config-1</module>
         <module>bean-core</module>
-        <module>application-event</module>
+        <module>enable-principle</module>
+        <module>enableautoconfig-inspect</module>
         <module>extend-springboot</module>
-        <module>springboot-web</module>
-        <module>springboot-starter-my-redis</module>
+        <module>health-metric</module>
         <module>spring-aop</module>
+        <module>springboot-starter-my-redis</module>
         <module>springboot-test</module>
+        <module>springboot-web</module>
     </modules>
 </project>

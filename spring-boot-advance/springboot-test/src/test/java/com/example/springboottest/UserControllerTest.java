@@ -18,10 +18,10 @@ public class UserControllerTest {
         Assert.assertEquals("name",rest);
     }
 
-    @Test
-    public void test2(){
-        String rest = testRestTemplate.getForObject("/user/return", String.class);
-        Assert.assertEquals("name",rest);
-    }
+//    @Test
+//    public void test2(){
+//        String rest = testRestTemplate.getForObject("/user/return", String.class,"James");
+//        Assert.assertEquals("James",rest);
+//    }
 
 }

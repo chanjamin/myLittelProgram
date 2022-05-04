@@ -1,6 +1,6 @@
 package com.example;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import com.example.jedis.JedisTemplate;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -15,6 +15,8 @@ public class RedisAutoConfiguration {
     @Bean
     @ConditionalOnMissingBean(Jedis.class)
     public Jedis jedis(final RedisProperties redisProperties) {
-        return new Jedis(redisProperties.getHost(), redisProperties.getPort());
+        Jedis jedis = new JedisTemplate(redisProperties.getHost(), redisProperties.getPort());
+        String auth = jedis.auth(redisProperties.getPassword());
+        return jedis;
     }
 }
